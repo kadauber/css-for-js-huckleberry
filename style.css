@@ -14,14 +14,14 @@ body {
 
 :root {
   /* Variables were not supposed to be part of this challenge but I love them so much :') */
-  --space-8: 8px;
-  --space-16: 16px;
-  --space-24: 24px;
-  --space-32: 32px;
-  --space-48: 48px;
-  --space-64: 64px;
-  --space-96: 96px;
-  --space-128: 128px;
+  --space-8px: 8px;
+  --space-16px: 16px;
+  --space-24px: 24px;
+  --space-32px: 32px;
+  --space-48px: 48px;
+  --space-64px: 64px;
+  --space-96px: 96px;
+  --space-128px: 128px;
 
   --color-green: hsl(160deg, 100%, 30%);
   --color-gold-light: hsl(45deg, 100%, 50%);
@@ -42,8 +42,8 @@ body {
 h1 {
   font-size: var(--font-size-32);
   line-height: 1.2;
-  margin-block-start: var(--space-32);
-  margin-block-end: var(--space-48);
+  margin-block-start: var(--space-32px);
+  margin-block-end: var(--space-48px);
 }
 
 h2 {
@@ -53,7 +53,7 @@ h2 {
 }
 
 p {
-  margin-block: var(--space-16);
+  margin-block: 1rem;
   font-size: var(--font-size-20);
 }
 
@@ -67,13 +67,13 @@ strong {
 
 .max-width-wrapper {
   margin-inline: auto;
-  max-width: 800px;
+  max-width: 50rem;
 }
 
 header {
   border-bottom: 8px solid var(--color-light);
-  padding-block: var(--space-64);
-  padding-inline: var(--space-24);
+  padding-block: var(--space-64px);
+  padding-inline: var(--space-24px);
 }
 
 .intro-chunk {
@@ -82,26 +82,27 @@ header {
 
 /* Could be more robust but ok for this situation */
 .intro-chunk p {
-  max-width: 415px;
+  /* max-width: 415px; */
+  max-width: 25rem;
 }
 
 main {
   background-color: var(--color-medium);
-  padding-block: var(--space-64);
+  padding-block: var(--space-64px);
 }
 
 .card {
   background-color: hsl(0deg, 0%, 100%);
-  padding-block: var(--space-24);
-  padding-inline: var(--space-24);
+  padding-block: var(--space-24px);
+  padding-inline: var(--space-24px);
   border-bottom: 8px solid var(--color-light);
 }
 
 .indented-heading {
   max-width: fit-content;
-  padding-block: var(--space-16);
-  padding-inline-start: var(--space-32);
-  padding-inline-end: var(--space-32);
+  padding-block: var(--space-16px);
+  padding-inline-start: var(--space-32px);
+  padding-inline-end: var(--space-32px);
   margin-inline-start: -32px;
   margin-block-start: -16px;
   border-bottom: 8px solid var(--color-gold-dark);
