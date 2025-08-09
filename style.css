@@ -7,6 +7,103 @@ html,
 body {
   margin: 0;
   padding: 0;
+  line-height: 1.5;
 }
 
 /* Add styles here! */
+
+:root {
+  /* Variables were not supposed to be part of this challenge but I love them so much :') */
+  --space-8: 8px;
+  --space-16: 16px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-48: 48px;
+  --space-64: 64px;
+  --space-96: 96px;
+  --space-128: 128px;
+
+  --color-green: hsl(160deg, 100%, 30%);
+  --color-gold-light: hsl(45deg, 100%, 50%);
+  --color-gold-dark: hsl(45deg, 100%, 40%);
+  --color-black: hsl(0deg, 0%, 0%);
+  --color-very-dark: hsl(0deg, 0%, 10%);
+  --color-dark: hsl(0deg, 0%, 30%);
+  --color-medium: hsl(0deg, 0%, 40%);
+  --color-light: hsl(0deg, 0%, 60%);
+  --color-white: hsl(0deg, 0%, 100%);
+
+  --font-size-16: 1rem;
+  --font-size-20: 1.25rem;
+  --font-size-24: 1.5rem;
+  --font-size-32: 2rem;
+}
+
+h1 {
+  font-size: var(--font-size-32);
+  line-height: 1.2;
+  margin-block-start: var(--space-32);
+  margin-block-end: var(--space-48);
+}
+
+h2 {
+  font-size: var(--font-size-24);
+  line-height: 1.2;
+  margin-block: 0;
+}
+
+p {
+  margin-block: var(--space-16);
+  font-size: var(--font-size-20);
+}
+
+p:last-child {
+  margin-block-end: 0;
+}
+
+strong {
+  color: var(--color-green);
+}
+
+.max-width-wrapper {
+  margin-inline: auto;
+  max-width: 800px;
+}
+
+header {
+  border-bottom: 8px solid var(--color-light);
+  padding-block: var(--space-64);
+  padding-inline: var(--space-24);
+}
+
+.intro-chunk {
+  background-color: hsl(0deg, 0%, 100%);
+}
+
+/* Could be more robust but ok for this situation */
+.intro-chunk p {
+  max-width: 415px;
+}
+
+main {
+  background-color: var(--color-medium);
+  padding-block: var(--space-64);
+}
+
+.card {
+  background-color: hsl(0deg, 0%, 100%);
+  padding-block: var(--space-24);
+  padding-inline: var(--space-24);
+  border-bottom: 8px solid var(--color-light);
+}
+
+.indented-heading {
+  max-width: fit-content;
+  padding-block: var(--space-16);
+  padding-inline-start: var(--space-32);
+  padding-inline-end: var(--space-32);
+  margin-inline-start: -32px;
+  margin-block-start: -16px;
+  border-bottom: 8px solid var(--color-gold-dark);
+  background-color: var(--color-gold-light);
+}
